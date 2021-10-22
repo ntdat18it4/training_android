@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/clickHeadertv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Chosse"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"/>
+    
+    <RadioGroup
+        android:id="@+id/clickRadioGroup"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="25dp"
+        app:layout_constraintTop_toBottomOf="@id/clickHeadertv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <RadioButton
+            android:id="@+id/internRbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Interns"/>
+
+        <RadioButton
+            android:id="@+id/fresherRbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fresher"/>
+
+        <RadioButton
+            android:id="@+id/juniorRbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Junior"/>
+
+        <RadioButton
+            android:id="@+id/seniornRbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Senior"/>
+
+        <RadioButton
+            android:id="@+id/leaderRbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leader"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/cancelbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:backgroundTint="#FF0057"
+        android:textColor="#ffff"
+        app:layout_constraintTop_toBottomOf="@+id/clickRadioGroup"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="25dp"/>
+
+    <Button
+        android:id="@+id/submitlbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:backgroundTint="#00FF0A"
+        android:textColor="#ffff"
+        app:layout_constraintTop_toBottomOf="@+id/clickRadioGroup"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
