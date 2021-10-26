@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#6DE372">
+
+    <TextView
+        android:id="@+id/top_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simple"
+        android:textSize="40sp"
+        android:textColor="#41BDF4"
+        android:textStyle="italic"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="250dp"/>
+
+    <TextView
+        android:id="@+id/middle_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Code"
+        android:textSize="40sp"
+        android:textColor="#FFEB3B"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@+id/top_tv"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/bottom_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animation"
+        android:textSize="40sp"
+        android:textColor="#E91E63"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@+id/middle_tv"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
