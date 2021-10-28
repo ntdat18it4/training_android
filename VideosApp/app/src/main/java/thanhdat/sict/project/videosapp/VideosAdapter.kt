@@ -43,7 +43,7 @@ class VideosAdapter(arrVideos : ArrayList<VideosModel>) : RecyclerView.Adapter<V
                     if (scale > 1f){
                         itemView.videosView.scaleX = scale
                     }else{
-                        itemView.videosView.scaleY = (1 / scale)
+                        itemView.videosView.scaleY = (1f / scale)
                     }
 
                 }
