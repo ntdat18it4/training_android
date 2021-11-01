@@ -24,6 +24,11 @@ class Service : Service() {
         createNotificationChannel()
     }
 
+    override fun onDestroy() {
+        super.onDestroy()
+        musicPlayer.stop()
+    }
+
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
 
         showNotification()
